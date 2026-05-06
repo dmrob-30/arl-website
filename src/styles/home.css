@@ -1,0 +1,174 @@
+/* Home page styles */
+
+/* Hero container */
+.hero {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  padding: 3rem 1rem;
+  min-height: 60vh;
+  background: var(--color-background);
+}
+
+/* Content wrapper - two columns on wide screens */
+.home-content {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Text column (left) */
+.home-text {
+  flex: 1 1 48%;
+  padding-right: 3rem;
+}
+
+.home-welcome {
+  color: var(--color-primary);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+}
+
+.home-title {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.02;
+}
+
+.home-sub {
+  margin: 0;
+  font-size: 1.125rem;
+  letter-spacing: 0.04em;
+  color: rgba(255,255,255,0.8);
+}
+
+.home-title .accent, .accent {
+  color: var(--color-primary);
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  border: 2px solid rgba(0,240,255,0.25);
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.cta:hover { background: rgba(0,240,255,0.03); }
+
+/* Image column (right) */
+.home-image {
+  size: 150%;
+  position: relative;
+  flex: 0 0 52%;
+  height: 520px;
+  overflow: hidden;
+}
+
+.home-image img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 110%;
+  width: auto;
+  display: block;
+}
+
+.home-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  background: linear-gradient(
+    to right,
+    rgba(11, 11, 13, 0.9),
+    rgba(11, 11, 13, 0.1),
+    rgba(11, 11, 13, 0.7)
+  );
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+    min-height: 60vh;
+  }
+
+  .home-content {
+    flex-direction: column-reverse; /* show image below text */
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-text {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .home-image {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .home-image img {
+    width: 80%;
+    max-width: 360px;
+  }
+}
+
+/* Small tweak for very small screens */
+@media (max-width: 420px) {
+  .home-title { font-size: 1.5rem; }
+  .home-sub { font-size: 1rem; }
+}
+
+/* Info row (three cards) */
+.info-row { padding: 1.25rem 1rem 3rem; }
+.info-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.info-card {
+  background: rgba(17,17,20,0.6);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 1.25rem;
+  color: rgba(255,255,255,0.9);
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info-card .meta { color: var(--color-primary); font-weight: 700; letter-spacing: 1px; }
+.info-card .title { font-size: 1.6rem; font-weight: 800; margin-top: 0.5rem; }
+.info-card .sub { color: rgba(255,255,255,0.75); margin-top: 0.5rem; }
+
+.info-next .icon { font-size: 28px; color: var(--color-primary); }
+
+.info-round .cta.small { padding: 0.55rem 1rem; border-radius: 5px; }
+
+.info-countdown .countdown-grid { display: flex; gap: 1.5rem; align-items: center; }
+.info-countdown .count { text-align: center; }
+.info-countdown .num { font-size: 2rem; color: var(--color-primary); font-weight: 800; }
+.info-countdown .label { font-size: 0.75rem; color: rgba(255,255,255,0.75); }
+
+@media (max-width: 900px) {
+  .info-grid { grid-template-columns: 1fr; }
+  .home-image { height: 360px; }
+  .home-image img { height: 130%; }
+}

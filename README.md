@@ -1,16 +1,55 @@
-# React + Vite
+# 🏁 Atmos Racing League Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web dashboard for the **Atmos Racing League (ARL)** — a competitive F1 25 racing league focused on clean racing, realistic rules, and high-quality race experiences.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Project Overview
 
-## React Compiler
+This website acts as a central hub for the league, providing:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📅 Race calendar  
+- 🏆 Championship standings  
+- 🧑‍✈️ Driver information  
+- 🏁 Race results  
+- 🎥 Stream links & highlights  
 
-## Expanding the ESLint configuration
+The goal is to create a professional, esports-style platform for both drivers and viewers.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React (Vite)
+- **Styling:** Custom CSS (no Tailwind)
+- **Version Control:** Git + GitHub
+
+---
+
+## 🎨 Design System
+
+### Colours
+- Background: `#0B0B0D`
+- Panel: `#1A1A1F`
+- Primary: `#00F0FF`
+- Secondary: `#007BFF`
+- Text: `#FFFFFF`
+- Muted: `#B0B0B0`
+
+### Fonts
+- **Orbitron** – Headings  
+- **Rajdhani** – Subheadings  
+- **Inter** – Body text  
+
+---
+
+## 🔮 Planned Features
+
+- Driver standings system  
+- Race calendar view  
+- Driver profiles  
+- Race results tracking  
+- Data visualisations (lap times, performance)  
+- Admin tools for updating results  
+
+---

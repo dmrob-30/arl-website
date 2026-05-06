@@ -1,0 +1,48 @@
+/* Navbar styles matching the provided screenshot */
+.arl-navbar {
+  background: #0b0b0b;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.arl-navbar .container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.arl-logo img { height: 44px; display: block; }
+.arl-nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.arl-nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 8px 0;
+  position: relative;
+}
+.arl-nav a:hover { color: var(--color-primary); }
+.arl-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: transparent;
+  bottom: -6px;
+  border-radius: 3px;
+}
+.arl-nav a.active { color: var(--color-primary); }
+.arl-nav a.active::after { background: var(--color-primary); }
+
+/* Make header compact on small screens */
+@media (max-width: 640px) {
+  .arl-navbar .container { padding: 12px; }
+  .arl-nav { gap: 12px; font-size: 13px; }
+  .arl-logo img { height: 48px; }
+}

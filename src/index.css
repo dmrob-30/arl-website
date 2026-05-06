@@ -1,1 +1,29 @@
-@import "tailwindcss";
+:root {
+  --color-background: #0B0B0D;
+  --color-panel: #1A1A1F;
+  --color-primary: #00F0FF;
+  --color-secondary: #007BFF;
+  --color-text: #FFFFFF;
+  --color-muted: #B0B0B0;
+  min-height: 100%;
+  margin: 0;
+  background: var(--color-background);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, .heading {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2, h3, .subheading {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* Basic reset */
+* { box-sizing: border-box; }
+html,body,#root { height: 100%; margin: 0; }
