@@ -18,31 +18,6 @@ The goal is to create a professional, esports-style platform for both drivers an
 
 ---
 
-## 🛠️ Tech Stack
-
-- **Frontend:** React (Vite)
-- **Styling:** Custom CSS (no Tailwind)
-- **Version Control:** Git + GitHub
-
----
-
-## 🎨 Design System
-
-### Colours
-- Background: `#0B0B0D`
-- Panel: `#1A1A1F`
-- Primary: `#00F0FF`
-- Secondary: `#007BFF`
-- Text: `#FFFFFF`
-- Muted: `#B0B0B0`
-
-### Fonts
-- **Orbitron** – Headings  
-- **Rajdhani** – Subheadings  
-- **Inter** – Body text  
-
----
-
 ## 🔮 Planned Features
 
 - Driver standings system  
